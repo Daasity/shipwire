@@ -6,13 +6,14 @@ module Shipwire
 
     API_VERSION = 3
 
-    attr_reader :method, :path, :params, :body
+    attr_reader :method, :path, :params, :body, :version
 
-    def initialize(method: :get, path: '', params: {}, body: {})
-      @method = method
-      @path = path
-      @params = params
-      @body = body
+    def initialize(method: :get, path: '', params: {}, body: {}, version: API_VERSION)
+      @method  = method
+      @path    = path
+      @params  = params
+      @body    = body
+      @version = version
 
       @connection = build_connection
     end
@@ -55,7 +56,7 @@ module Shipwire
     end
 
     def full_path
-      "/api/v#{API_VERSION}/#{@path}"
+      "/api/v#{@version||API_VERSION}/#{@path}"
     end
 
     def params
