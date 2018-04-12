@@ -19,6 +19,7 @@ require 'shipwire/returns'
 require 'shipwire/secret'
 require 'shipwire/stock'
 require 'shipwire/webhooks'
+require 'shipwire/warehouses'
 
 require 'shipwire/products/base'
 require 'shipwire/products/insert'

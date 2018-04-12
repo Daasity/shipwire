@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://david.freerksen%40groundctrl.com:gOg6maBr6E@api.beta.shipwire.com/api/v3/orders/91302995/trackings?expand=trackings
+    uri: https://david.freerksen%40groundctrl.com:gOg6maBr6E@api.beta.shipwire.com/api/v3/orders/91302995?expand=trackings
     body:
       encoding: US-ASCII
       string: ''
@@ -40,6 +40,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":200,"message":"Successful","resourceLocation":"https:\/\/api.beta.shipwire.com\/api\/v3\/orders\/91302995\/trackings?offset=0&limit=20&expand=trackings","resource":{"offset":0,"total":0,"previous":null,"next":null,"items":[]}}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 09 Jun 2015 23:29:51 GMT
 recorded_with: VCR 2.9.3
