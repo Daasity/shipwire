@@ -1,3 +1,8 @@
+# !!! - WARNING - !!!
+Daasity forked this gem at **v2.0.0** and made modifications. It will be versioned from here as `v2.0.0.custom.X`. The custom gem will be published to Daasity's **Gemfury** account to allow auto-dependency resolution.
+
+_#TODO: Consolidate changes with the original [gem owner](https://github.com/billr578/shipwire) in the near future._
+
 # Shipwire
 
 Ruby gem to integrate with Shipwire's API.
